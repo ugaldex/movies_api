@@ -9,5 +9,6 @@ router.get('/:uuid', movieController.getById);
 router.post('/', movieController.create);
 router.put('/:uuid', movieController.update);
 router.delete('/:uuid', movieController.delete);
+router.post('/bulk-delete', movieController.bulkDelete);
 
 module.exports = router;
