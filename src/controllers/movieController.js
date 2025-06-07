@@ -42,6 +42,6 @@ module.exports = {
             return res.status(400).json({ error: 'Lista de UUIDs inválida' });
         }
         await Movie.destroy({ where: { uuid: uuids } });
-        return res.status(204).send();
+        return res.status(204).json({ message: 'Filmes deletados com sucesso' });
     }
 };
