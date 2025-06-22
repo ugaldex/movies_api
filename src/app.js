@@ -6,7 +6,8 @@ app.use(cors({
         'capacitor://localhost',
         'http://localhost',
         'http://localhost:8100',
-        'https://localhost'
+        'https://localhost',
+        'https://copy-paste-production-528f.up.railway.app'
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
